@@ -929,11 +929,46 @@ li.company-list__item {
     .select-box__current {
         padding-left: 10px;
     }
+    .head {
+        padding: 20px 0 18px 0;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .padding_mob>.head {
+        margin-top: 0px;
+    }
+
+    .head_margin-left {
+        text-align: center;
+    }
+
+    .padding_mob {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .head_margin-bottom {
+        margin-bottom: 0;
+    }
+    .button_sub {
+        margin: 0 auto 30px auto;
+    }
+    .item-serv {
+        padding-top: 35px;
+    }
+    .services-text {
+        padding: 0 0px 30px 30px;
+    }
+    .hr_mix {
+        margin: 20px 0 20px 0;
+    }
 }
 
 @media screen and (max-width: 450px) {
     .slogan {
         font-size: 12px;
+        line-height: normal;
+        display: block;
     }
 
     .place__icon, .receive__icon {
@@ -944,16 +979,69 @@ li.company-list__item {
         margin-left: 0;
     }
     .place, .receive {
-        margin-top: 14%;
+        margin-top: 12%;
     }
-
+    .place-detail, .receive-detail {
+        padding: 10px 0 10px 20px;
+    }
 
     ul.company-list {
         margin-left: 20px;
     }
 
     .h-comapny {
-        font-size: 17px;
+        font-size: 18px;
+        letter-spacing: 3.15px;
+    }
+
+    .head {
+        padding: 20px 0 18px 0;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .head_margin-bottom {
+        margin-bottom: 0;
+    }
+
+    .hr_mix {
+        margin: 20px 0 20px 0;
+    }
+
+    .text-vagno {
+        font-size: 14px;
+        padding-left: 10px;
+        letter-spacing: 1.4px;
+    }
+
+    .h-vagno {
+        font-size: 18px;
+    }
+
+    .item-serv {
+        padding-top: 35px;
+    }
+
+    .services-text {
+        padding: 0 0px 30px 30px;
+    }
+
+    .button_sub {
+        margin: 0 auto 30px auto;
+    }
+
+    .head_margin-left {
+        text-align: center;
+    }
+
+    .padding_mob {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .padding_mob>.head {
+        margin-top: 0px;
     }
 
     .img-icon {
@@ -972,8 +1060,16 @@ li.company-list__item {
 
     .h-vagno_mix {
         font-size: 15px;
+        letter-spacing: 0.13px;
+        padding-top: 55%;
     }
     .text-vagno_mix {
         font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .h-vagno_mix {
+        padding-top: 75%;
     }
 }
