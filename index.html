@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container mob_margin-top">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 d-md-none d-sm-none d-none d-lg-block" id="myNavbar">
                     <ul class="menu">
@@ -264,16 +264,6 @@
         
         <div class="nav">
             <div class="nav__content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-7">
-                            <a href="/">
-                                <img src="images/logo.png" alt="логотип ЖКХ Волга" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col-5"></div>
-                    </div>
-                </div>
                 <nav class="nav__list">
                     <ul>
                         <li class="nav__item"><a href="#comp">о компании</a></li>
@@ -290,21 +280,5 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
-        <script>
-            const anchors = document.querySelectorAll('li.menu__item a')
-
-            for (let anchor of anchors) {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault()
-
-                    const blockID = anchor.getAttribute('href')
-
-                    document.querySelector(blockID).scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    })
-                })
-            }
-        </script>
     </body>
 </html>

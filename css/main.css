@@ -111,7 +111,9 @@
 }
 .nav__content {
     position: absolute;
-    top: 26%;
+    height: 100%;
+    display: block;
+    top: 60%;
     left: 50%;
     width: 100%;
     max-width: 1200px;
@@ -564,6 +566,7 @@ li.company-list__item {
     -webkit-animation-timing-function: step-start;
     animation-timing-function: step-start;
     box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
 }
 .select-box__option {
     display: block;
@@ -791,9 +794,33 @@ li.company-list__item {
         width: 318px;
         padding: 20px 0 17px 0;
     }
+    .mob_margin-top {
+        top: 91px;
+        display: block;
+        position: relative;
+    }
+
+    .header {
+        position: fixed;
+        background-color: #ffffff;
+        height: 100px;
+        z-index: 100;
+        width: 100%;
+        margin-top: 0;
+        box-shadow: 0px 10px 24px -20px #000000;
+        padding-top: 20px;
+    }
+
+    .nav__content {
+        top: 70%;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        height: 100px;
+    }
+
     .slogan {
         font-size: 16px;
         line-height: 15.33px;
@@ -866,6 +893,9 @@ li.company-list__item {
     .slogan {
         font-size: 14px;
         line-height: 5.33px;
+    }
+    .header {
+        height: 80px;
     }
     .nav__trigger {
         right: 1rem;
